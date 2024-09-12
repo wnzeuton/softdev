@@ -1,0 +1,22 @@
+def array123(nums):
+  one = False
+  two = False
+  for i in nums:
+    if i == 1:
+      one = True
+      two = False
+    elif i == 2:
+      if(one):
+        two = True
+      else:
+        one = False
+        two = False
+    elif i == 3:
+      if(one and two):
+        return True
+      else:
+        one = False
+        Two = False
+  
+  return False
+

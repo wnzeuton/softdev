@@ -1,0 +1,5 @@
+def string_bits(str):
+  if(len(str) == 0):
+    return ""
+  return str[0] + string_bits(str[2:])
+
