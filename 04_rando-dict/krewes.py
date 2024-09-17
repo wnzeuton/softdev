@@ -5,6 +5,7 @@
 #2024-09-13
 #time spent: 0.2
 import random
+#Define dictionary of students with SoftDev period as key and list of students as value
 krewes = {
            4: [ 
 		'DUA','TAWAB','EVA','JACK','VICTOR','EVAN','JASON','COLYI','IVAN','TANZEEM',
@@ -22,6 +23,10 @@ krewes = {
 
 def gen_rand_student():
     rand_period = list(krewes.keys())[random.randint(0, len(krewes) - 1)]
+    #generate a random period
     rand_devo = krewes[rand_period][random.randint(0, len(krewes[rand_period]) - 1)]
+    #generate devo from said period    
     return rand_devo
-print(gen_rand_student())
+
+def test():
+    print(gen_rand_student())
