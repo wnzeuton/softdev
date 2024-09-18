@@ -7,6 +7,7 @@ K05 -- File parsing
 time spent: 0.3
 '''
 import random
+#function to parse file
 def parseDuckies(file_name):
     
     file = open(file_name, "r")
@@ -20,9 +21,9 @@ def parseDuckies(file_name):
     
     for i in range(len(people) - 1):
         dividedPeople.append(people[i].split('$$$'))
-    
+    #return 2 dimensional array
     return dividedPeople
-    
+#function to convered 2D array to dictionary (so that we can reuse code from k04)
 def DDArrayToDict(arr):
     my_dict = {}
     for i in arr:
