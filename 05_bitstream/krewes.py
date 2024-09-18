@@ -12,7 +12,7 @@ def parseDuckies(file_name):
     file = open(file_name, "r")
     line = file.read()
     
-    print(line)
+    
     line = line.replace('\n', '')
     people = line.split('@@@')
     
