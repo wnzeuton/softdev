@@ -1,0 +1,8 @@
+We predict that when we uncomment the second function, then we will be able
+to navigate to /static/foo.html in our local web page and see the content
+hosted there.
+
+We think that we will just have a random number displayed every time we
+reload the page.
+
+These two things appear to have been true after we went and did it.
