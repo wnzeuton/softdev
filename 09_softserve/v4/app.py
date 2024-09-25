@@ -14,3 +14,7 @@ def hello_world():
 if __name__ == "__main__":      # true if this file NOT imported
     app.debug = True            # enable auto-reload upon code change
     app.run()
+#what does imported mean?
+#clearly on debug mode because the name is in fact '__main__'
+#we think that Flask has built in app settings that you can change by using a different name.
+#It seems that the '__name__' is not just for show because if u get rid of a letter, it does not work, meaning it is not just cosmetic

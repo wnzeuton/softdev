@@ -11,5 +11,5 @@ def hello_world():
     print(__name__)                   #where will this go?
     return "No hablo queso!"
 
-app.debug = True
-app.run()
+app.debug = True # what is this??? It prints out debug mode and a pin in the terminal. How do you use the pin? 
+app.run() # OHHHHHHHHH you can make edits live!! After we closed out of thonny confused, terminal said "restarting" which made us think it was automatically updating!!
