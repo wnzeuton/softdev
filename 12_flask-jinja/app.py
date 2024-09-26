@@ -5,13 +5,14 @@
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Q0:
-<your response here>
+We will get an error because we use render_template later in the script
 
 Q1:
-<your response here>
+Yes, http://127.0.0.1:5000/my_foist_template
+
 
 Q2:
-<your response here>
+Which file we want to use as a template - replaces mention of foo in template with provided string - replaces collection variable in template with coll
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
