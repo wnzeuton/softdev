@@ -40,7 +40,9 @@ def test_tmplt():
     # Q2: What is the significance of each argument? Simplest, most concise answer best.
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     return render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
-
+@app.route("/topher")
+def toph():
+    return render_template('topher_tmplt.html', foo = "Home", collection=coll)
 
 if __name__ == "__main__":
     app.debug = True
