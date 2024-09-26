@@ -6,18 +6,52 @@
  -->
 
 <html>
-	
+  <meta charset="UTF-8">
+	<style>
+    body {
+      cursor: url('static/cursor.png'), auto;
+    }
+    .ascii-art {
+            font-family: "Courier New", Courier, monospace; /* Use monospace font */
+            font-size: 11px;
+            color: #333; /* Dark text */
+            font-weight: bolder;
+            line-height: 0.2;
+        }
+  </style>
   <head>
     <title> {{ foo }} </title>
   </head>
 
   <body>
     <h1>TOPHER LOVERS HOME PAGE</h1>
-    <img src='static/topher.jpeg' width="1000" height="300">
-    {% for item in collection %}
-     {{ item }}
-     <br>
+    {% for img in images %}
+      <img src='/static/{{img}}' width="700" height="300">
     {% endfor %}
+      <h1>About</h1>
+    <h3>
+      Who are we?
+    </h3>
+    <table style="width:100%">
+      {% for item in collection %}
+      <tr>
+        {% for d in item %}
+      <td>
+        <h3>WE ARE TOPHER LOVERS</h3><h4> <b> {{ d }}</b> </h4>
+      </td>
+      {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>    
+    <h1>Mission</h1>
+  </br>
+    <h2>GLORY TO TOPHER</h2>
+    <pre class="ascii-art">
+    {% for line in art %}
+      {{line}}
+      </br>
+    {% endfor %}
+    </pre>
   </body>
 
 </html>
