@@ -29,8 +29,8 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     return "No hablo queso!"
-
-coll = [["WE ARE STRONG","WE BELONG","HEAR OUR SONG", "WE MARCH ALONG"], ["WE WONT FALL", "WE GIVE OUR ALL", "HEED OUR CALL", "WE WONT STALL"]]
+coll = [0,1,1,2,3,5,8]
+chant = [["WE ARE STRONG","WE BELONG","HEAR OUR SONG", "WE MARCH ALONG"], ["WE WONT FALL", "WE GIVE OUR ALL", "HEED OUR CALL", "WE WONT STALL"]]
 gallery = ["topher.jpeg", "topher2.png"]
 art = []
 with open('static/art.txt', 'r') as art:
@@ -48,7 +48,7 @@ def test_tmplt():
     return render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
 @app.route("/topher")
 def toph():
-    return render_template('topher_tmplt.html', foo = "Home", collection=coll, images = gallery, art = art)
+    return render_template('topher_tmplt.html', foo = "Home", collection=chant, images = gallery, art = art)
 
 if __name__ == "__main__":
     app.debug = True
