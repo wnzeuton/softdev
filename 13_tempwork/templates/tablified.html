@@ -1,0 +1,22 @@
+<!DOCTTYPE html>
+<html>
+    <head>
+        <title> {{ title }} </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th> Occupation </th>
+                <th> Percentage </th>
+                <th> Resource </th>
+            </tr>
+            {% for row in occupations %}
+                <tr>                
+                    {% for item in occupations[row] %}
+                        <td> {{ item }} </td>
+                    {% endfor %}    
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
