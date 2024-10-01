@@ -11,10 +11,10 @@
                 <th> Resource </th>
             </tr>
             {% for row in occupations %}
-                <tr>                
-                    {% for item in occupations[row] %}
-                        <td> {{ item }} </td>
-                    {% endfor %}    
+                <tr>
+			{% for key in row.keys() %}
+			<td> {{ row[key] }} </td>
+			{% endfor %}
                 </tr>
             {% endfor %}
         </table>
