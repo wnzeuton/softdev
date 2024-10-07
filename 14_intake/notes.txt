@@ -1,0 +1,12 @@
+Got jinja error: BedRequestKeyError, username does not exist
+
+After added ?username, we were directed to a different page.
+This tells us that to make a request you have to add ?[var] to the web address.
+
+This is verified by the statements output in the terminal.
+
+After submitting our username from the login page, it says username =
+[whatver we submit into the input box]&sub1=Submit+Query
+
+We can see that the request object is universal across the script,
+and can be called by any function and will share the same arguments/values.
