@@ -10,3 +10,11 @@ After submitting our username from the login page, it says username =
 
 We can see that the request object is universal across the script,
 and can be called by any function and will share the same arguments/values.
+
+Upon further inspection, we realize that 'username' can only be called because
+the form in login.html passes the input value under the name 'username'. When
+we replaced that to 'user', we observed that the address changed to
+auth/user=blahblahblah and we received an error telling us that 'username' was
+nowhere to be found. Changing 'username' to 'user' in the /auth section of
+app.py would likely resolve this issue and give us the same result as 
+we originally had with all values being 'username'.
