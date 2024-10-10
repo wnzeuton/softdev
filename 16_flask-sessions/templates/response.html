@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> RESPONSE PAGE </title>
+  </head>
+
+  <body>
+    <h1>
+      Hey there {{ user }}!
+    </h1>
+
+
+    <h3>
+      Used {{ meth }}
+    </h3>
+    <h5>
+	What's the difference between GET and POST?!
+    </h5>
+    <h6> I thought you'd never ask </h6>
+    <h5> The difference between the GET and POST request methods is in their method of retrieving / sending data. POST sends information through the back end, and the client never sees it. On the other hand, GET does so through queries directly visible in the URL address. Despite these differences, POST is not in fact more secure than GET, it is simply harder to see.</h5>
+    <br>
+	<form action="/logout" method = "GET">
+		<button type="submit">Logout</button>
+	</form>
+    <h7> Brought to you by BLUE STUFF: Will Nzeuton & Daniel Park</h7>
+  </body>
+
+</html>
