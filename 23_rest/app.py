@@ -9,19 +9,20 @@ key = "dpf7J5K33dTVC0xYPZzQVrgy5z3eiwqnTKraBvd4"
 
 app = Flask(__name__)
 
-url = f"https://api.nasa.gov/planetary/apod?api_key={key}&count=1"
 
-with request.urlopen(url) as response:
-    response = response.read().decode('utf-8')
-
-    print(response)
-    
-json.dumps(response)
 
 
 @app.route("/")
 def index():
-    return render_template( 'index.html')
+    url = f"https://api.nasa.gov/planetary/apod?api_key={key}&count=1"
+
+    with request.urlopen(url) as response:
+        response = response.read().decode('utf-8')
+
+        jsonify = json.loads(response)[0]
+        
+    print(jsonify)
+    return render_template( 'index.html', date = jsonify['date'], description = jsonify['explanation'], title = jsonify['title'], url = jsonify['url'])
 
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
