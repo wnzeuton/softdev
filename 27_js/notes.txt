@@ -1,0 +1,2 @@
+*if statements don't NEED curly brackets (although i prefer them for readability)
+*are semicolons optional???
