@@ -38,18 +38,17 @@
 //send diagnostic output to console
 //(Ctrl-Shift-K in Firefox to reveal console)
 console.log("AYO");
-
+//goes straight into console 
 var i = "hello";
 var j = 20;
-
-
+//typing this variables out returns their respective values
 //assign an anonymous fxn to a var
 var f = function(x) 
 {
     var j=30;
     return j+x;
 };
-
+//works in console
 
 //instantiate an object
 var o = { 'name' : 'Thluffy',
@@ -61,6 +60,8 @@ var o = { 'name' : 'Thluffy',
           }
         };
 
+//access the fields by saying object.field !
+
 //create a new node in the tree
 var addItem = function(text)
 {
@@ -69,6 +70,7 @@ var addItem = function(text)
     newitem.innerHTML = text;
     list.appendChild(newitem);
 };
+//change is visible immediately (no reload required)
 
 //prune a node from the tree
 var removeItem = function(n)
@@ -101,16 +103,31 @@ var stripe = function()
 
 
 //insert your implementations here for...
-// FIB
-// FAC
-// GCD
+let fib = function(n){
+    if(n < 2){
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+let fact = function(n){
+    if(n == 0){
+        return 1;
+    } 
+    return n * fact(n - 1)
+}
+let gcd = function(a, b){
+    if (b == 0) {
+        return a;
+    }
+    return gcd(b, a % b);
+}
 
 
 // In addition to the style shown above,
 //  you are encouraged to test drive the "arrow function syntax" as shown below.
 //  Note anything notable.
 const myFxn = (param1, param2) => {
-    // body
+    retVal = param1 + param2;
     return retVal;
 };
 

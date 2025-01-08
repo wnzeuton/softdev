@@ -1,0 +1,1 @@
+if you change the js script then you have to reload the page to update
