@@ -2,7 +2,7 @@ from flask import render_template, url_for, flash, redirect, request
 from flask_login import login_user, current_user, logout_user, login_required, UserMixin, LoginManager
 from bcrypt import hashpw, gensalt, checkpw
 from . import create_app
-from .models import get_db_connection, init_db
+from .models import get_db_connection
 
 app = create_app()
 login_manager = LoginManager(app)
@@ -23,10 +23,6 @@ def load_user(user_id):
     if user is None:
         return None
     return User(user['id'], user['username'], user['email'], user['password'])
-
-@app.before_first_request
-def initialize():
-    init_db()
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -152,3 +148,7 @@ def home():
     blogs = conn.execute('SELECT * FROM blog').fetchall()
     conn.close()
     return render_template('home.html', blogs=blogs)
+
+@app.route('/base')
+def base():
+    return render_template('base.html')
