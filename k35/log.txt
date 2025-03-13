@@ -1,0 +1,3 @@
+trouble remembering instructions
+likes to add auxiliary python libraries that were not asked for
+seemingly big preference for sqlalchemy
