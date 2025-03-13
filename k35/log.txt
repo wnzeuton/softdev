@@ -1,3 +1,6 @@
 trouble remembering instructions
 likes to add auxiliary python libraries that were not asked for
 seemingly big preference for sqlalchemy
+used deprecated function at first
+flask running but cannot access app through local port???
+paused on me bruh
