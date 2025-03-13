@@ -299,3 +299,135 @@ Public code references from 7 repositories
 With these changes, the application should initialize the database correctly and avoid the AttributeError. You can now run your application using the same steps as before.
 
 000000000000000000000000000000000000000000000000000000000000000000000000000
+
+the routes aren't working, i'm getting error 404
+
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+To troubleshoot the 404 error, let's check a few things:
+
+    Ensure that the routes.py file is correctly importing the Flask app instance.
+    Make sure that the routes are correctly defined and registered with the Flask app instance.
+    Verify that the templates and URLs are correctly referenced in the HTML files and the routes.
+
+Let's update the structure and ensure everything is correctly set up.
+Updated app/__init__.py
+
+Updated app/routes.py
+
+Updated run.py
+
+Make sure your project structure is correct and all files are in place.
+Directory Structure
+Code
+
+project/
+    app/
+        __init__.py
+        models.py
+        routes.py
+        templates/
+            base.html
+            register.html
+            login.html
+            create_blog.html
+            view_blog.html
+            edit_blog.html
+    instance/
+        config.py
+    run.py
+
+Running the Application
+
+    Activate the virtual environment if not already activated:
+    sh
+
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+Run the application:
+sh
+
+    python run.py
+
+    Access the application in your web browser at http://127.0.0.1:5000.
+
+This should resolve the 404 errors and ensure that the routes are correctly working. If you still encounter any issues, please provide the specific error messages for further troubleshooting.
+
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+there is no home template
+
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+Let's create the home.html template to display all blogs on the home page.
+
+app/templates/home.html
+
+This template will display a list of all blogs with their titles and a snippet of their content. Each blog title will link to the detailed view of the blog. You can customize the HTML and CSS to match your desired design.
+
+Summary of Updated Directory Structure
+Code
+
+project/
+    app/
+        __init__.py
+        models.py
+        routes.py
+        templates/
+            base.html
+            register.html
+            login.html
+            create_blog.html
+            view_blog.html
+            edit_blog.html
+            home.html  # Newly added
+    instance/
+        config.py
+    run.py
+
+Running the Application
+
+    Activate the virtual environment if not already activated:
+    sh
+
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+Run the application:
+sh
+
+    python run.py
+
+    Access the application in your web browser at http://127.0.0.1:5000.
+
+This should render the home page with a list of all blogs. Let me know if you need any further assistance!
+
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+i'm still getting error 404
+
+000000000000000000000000000000000000000000000000000000000000000000000000000
+
+Let's review and ensure all parts of the application are correctly set up. We'll go through each file, making sure everything is correctly configured.
+Directory Structure
+
+Ensure your project has the following directory structure:
+Code
+
+project/
+    app/
+        __init__.py
+        models.py
+        routes.py
+        templates/
+            base.html
+            register.html
+            login.html
+            create_blog.html
+            view_blog.html
+            edit_blog.html
+            home.html
+    instance/
+        config.py
+    run.py
+
+app/__init__.py
