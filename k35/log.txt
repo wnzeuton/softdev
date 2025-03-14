@@ -4,3 +4,5 @@ seemingly big preference for sqlalchemy
 used deprecated function at first
 flask running but cannot access app through local port???
 paused on me bruh
+basic syntax deteriorating over time????
+after some prodding and manual editorializing, success!
