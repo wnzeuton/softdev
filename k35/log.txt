@@ -1,3 +1,19 @@
+Will Nzeuton, Margie Cao
+TBD
+SoftDev
+K35 -- Conversing with Copilot
+2025-03-14
+time spent: 2
+
+DISCO:
+
+Q/C/C:
+some areas of interest...
+
+q0: Very many; too many; required manual edits
+q1: Caught few but significant errors. Noticed via terminal error messages and standard debugging processes. We either fixed ourselves or informed CoPilot.
+q2: HTML Templates are quite similar, general process is similar. CoPilot was much more modular than our solutions.
+
 trouble remembering instructions
 likes to add auxiliary python libraries that were not asked for
 seemingly big preference for sqlalchemy
