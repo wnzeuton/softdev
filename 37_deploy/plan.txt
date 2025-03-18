@@ -1,0 +1,9 @@
+read tutorial
+perform tutorialized steps for pm w group watching
+upon success repeat steps w learnination for other group mates
+
+domain provision:
+dwn: no
+dmc: no
+dkl: no
+das: no
