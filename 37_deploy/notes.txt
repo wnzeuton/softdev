@@ -1,0 +1,20 @@
+k37 notes:
+sudo apt update
+and install python, venv, and other essentials
+we faced a weird daemon screen asking us which services should be installed, we just went with yes
+make a project directory and venv into it
+within venv, install wheel, uwsgi, and flask
+make basic app
+you have to allow your server ip to forward port 5000, otherwise it goes to your nginx site without said port
+uwsgi runs a flask app, or similarly
+configure project.ini and make a project.sock for sockets
+creating a systemd unit file will allow Ubuntu to auto start uwsgi to run a flask app
+configure project.service to communicate nginx to backend flask/uwsgi
+specifically the environment has quotations and "PATH=" in the service file
+give www-data chgrp perms
+start with sudo systemctl start project
+boot with sudo systemctl enable project
+we don't need a domain name, but make the server listen to the location and ip
+ln -s didn't cause us any issues
+you have to unblock the site by default
+use unlink
